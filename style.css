@@ -58,24 +58,98 @@
     background: red;
 }
 
+.ex-5-square:hover {
+    transform: scale(1.5);
+}
 
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+/* FINE QUADRATO 5 */
 
-
-
+/* IMG 6 */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
 
+/* IMG7 */
+.ex-7-img {
+    transition-duration: 2s;
+}
+.ex-7-img:hover {
+    filter: grayscale(1) blur(5px);
+
+}
+
+/* IMG8 */
+
+.ex-8-img:hover {
+    border-radius: 30px 30px;
+    filter: grayscale(1) opacity(0.5);
+}
+
+
+/* IMG9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+/* IMG9 */
+.ex-9-img:hover {
+    border-radius: 30px 30px;
+    filter: grayscale(1) blur(5px);
+    transform: scale(0.5);
+}
+
+/* IMG10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
 }
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/* CIRCLE 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+        0% {
+            transform: rotate(0);
+            }
+        90% {
+            transform: rotate(270deg);
+            }
+        100% {
+            transform: rotate(0);
+            }
+}
+
+/* END CIRCLE 11 */
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -89,6 +163,8 @@
     text-align: center;
     text-decoration: none;
 }
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;

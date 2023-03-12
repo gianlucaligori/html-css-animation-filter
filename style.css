@@ -129,22 +129,20 @@
 }
 
 .ex-11-icon:hover {
-    animation-name: spin;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation: spin3of4;
+    animation-duration: 2s; 
+    animation-timing-function:linear;
 }
-
-@keyframes spin {
-        0% {
-            transform: rotate(0);
-            }
-        90% {
-            transform: rotate(270deg);
-            }
-        100% {
-            transform: rotate(0);
-            }
+@keyframes spin3of4 {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
 
 /* END CIRCLE 11 */
